@@ -1,9 +1,6 @@
-import Navbar from '../components/Navbar';
-
 const Rockets = () => (
   <div className="rockets">
-    <Navbar />
-    <h2>dfgdfg</h2>
+    <h2>Rockets Info Goes Here</h2>
   </div>
 );
 

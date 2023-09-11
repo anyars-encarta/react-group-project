@@ -1,8 +1,6 @@
-import Navbar from '../components/Navbar';
-
 const MyProfile = () => (
   <div className="my-profile">
-    <Navbar />
+    <h2>My Profile Data Goes Here</h2>
   </div>
 );
 

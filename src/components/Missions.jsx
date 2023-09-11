@@ -1,8 +1,6 @@
-import Navbar from '../components/Navbar';
-
 const Missions = () => (
   <div className="missions">
-    <Navbar />
+    <h2>Mission Data Goes Here</h2>
   </div>
 );
 
