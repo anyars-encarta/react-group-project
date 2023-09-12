@@ -13,7 +13,7 @@ const Navbar = () => (
         <li><NavLink to="/" className={({ isActive }) => (isActive ? 'active link' : 'pending link')}>Rockets</NavLink></li>
         <li><NavLink to="/missions" className="link">Missions</NavLink></li>
         <li>|</li>
-        <li><NavLink to="/my-profile" className="link profile-link">My Profile</NavLink></li>
+        <li><NavLink to="/my-profile" className="link">My Profile</NavLink></li>
       </ul>
     </nav>
   </header>

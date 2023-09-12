@@ -24,7 +24,6 @@ header {
   text-decoration: none;
 }
 
-.navbar a:hover,
 .navbar .active {
   color: #9ad0cf;
   border-bottom: 2px solid #02bab7;
