@@ -1,0 +1,67 @@
+/* Container for the missions table */
+.missions {
+  margin: 90px 20px 20px 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style for the table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style for table headers */
+th {
+  border: 1px solid;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style for table rows */
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+/* Style for table data cells */
+td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.description {
+  width: 70%;
+}
+
+.status {
+  width: 15%;
+  text-align: center;
+}
+
+.join {
+  width: 10%;
+  align-items: center;
+  align-content: center;
+}
+
+/* Style for the "Join Mission" button */
+button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+/* Style for the "Join Mission" button on hover */
+button:hover {
+  background-color: #0056b3;
+}
