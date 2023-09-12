@@ -4,6 +4,7 @@ const initialState = {
 };
 
 const missionsReducer = (state = initialState, action) => {
+  let missionId;
   switch (action.type) {
     case 'FETCH_MISSIONS_SUCCESS':
       return {
@@ -17,6 +18,18 @@ const missionsReducer = (state = initialState, action) => {
         missions: [],
         error: action.payload,
       };
+    case 'JOIN_MISSION':
+      missionId = action.payload; // Assign the value inside the case block
+      return {
+        ...state,
+        missions: state.missions.map((mission) => { // To use rocket
+          if (mission.mission_id === missionId) {
+            return { ...mission, reserved: true };
+          }
+          return mission;
+        }),
+      };
+
     default:
       return state;
   }
