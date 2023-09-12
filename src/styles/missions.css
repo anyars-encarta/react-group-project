@@ -84,12 +84,12 @@ td {
 }
 
 /* Style for the "Join Mission" button on hover */
-.leave-m:hover {
+.join-m:hover {
   background-color: black;
   color: #ffff;
 }
 
-.join-m:hover {
+.leave-m:hover {
   background-color: red;
   color: #ffff;
 }
