@@ -24,7 +24,7 @@ const Missions = () => {
   return (
     <div className="missions">
       {loading ? (
-        <p>Loading missions...</p>
+        <p className="loading">Loading missions...</p>
       ) : (
         <table>
           <thead>
@@ -37,7 +37,7 @@ const Missions = () => {
           </thead>
           <tbody>
             {missions.map((mission) => (
-              <tr key={mission.mission_id} className={mission.reserved ? 'joined' : ''}>
+              <tr key={mission.mission_id} className={mission.reserved ? '' : 'joined'}>
                 <td className="name">{mission.mission_name}</td>
                 <td className="description">{mission.description}</td>
                 <td className="status">

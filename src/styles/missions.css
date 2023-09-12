@@ -7,6 +7,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.loading {
+  text-align: center;
+}
+
 /* Style for the table */
 table {
   width: 100%;
@@ -80,12 +84,12 @@ td {
 }
 
 /* Style for the "Join Mission" button on hover */
-.join-m:hover {
+.leave-m:hover {
   background-color: black;
   color: #ffff;
 }
 
-.leave-m:hover {
+.join-m:hover {
   background-color: red;
   color: #ffff;
 }
