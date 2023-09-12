@@ -38,7 +38,7 @@ const Missions = () => {
                 <td>{mission.mission_name}</td>
                 <td>{mission.description}</td>
                 <td>{mission.status}</td>
-                <td><button type="button">Leave Mission</button></td>
+                <td><button type="button">Join Mission</button></td>
               </tr>
             ))}
           </tbody>
