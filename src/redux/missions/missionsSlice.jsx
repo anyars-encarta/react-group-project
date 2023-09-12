@@ -20,4 +20,9 @@ export const joinMission = (missionId) => ({
   payload: missionId,
 });
 
+export const leaveMission = (missionId) => ({
+  type: 'LEAVE_MISSION',
+  payload: missionId,
+});
+
 export default fetchMissions;

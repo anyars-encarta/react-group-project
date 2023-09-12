@@ -29,10 +29,20 @@ const missionsReducer = (state = initialState, action) => {
           return mission;
         }),
       };
+    case 'LEAVE_MISSION':
+      missionId = action.payload;
+      return {
+        ...state,
+        missions: state.missions.map((mission) => {
+          if (mission.mission_id === missionId) {
+            return { ...mission, reserved: false };
+          }
+          return mission;
+        }),
+      };
 
     default:
       return state;
   }
 };
-
 export default missionsReducer;
