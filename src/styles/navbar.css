@@ -1,21 +1,30 @@
 header {
-    height: 5rem;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
+  height: 5rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .logo-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .logo-img {
-    width: 5rem;
+  width: 5rem;
 }
 
 .nav-items {
-    list-style: none;
-    display: flex;
-    gap: 2rem;
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.navbar .active {
+  color: #9ad0cf;
+  border-bottom: 2px solid #02bab7;
 }
