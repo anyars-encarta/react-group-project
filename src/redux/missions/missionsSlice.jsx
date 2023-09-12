@@ -8,6 +8,7 @@ const fetchMissions = () => async (dispatch) => {
       mission_name: mission.mission_name,
       description: mission.description,
     }));
+
     dispatch({ type: 'FETCH_MISSIONS_SUCCESS', payload: missions });
   } catch (error) {
     dispatch({ type: 'FETCH_MISSIONS_FAILURE', payload: error.message });

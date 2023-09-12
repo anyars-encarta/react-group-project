@@ -1,17 +1,34 @@
 header {
+  position: fixed;
+  width: 100%;
+  top: 0;
   height: 5rem;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+}
+
+.nav-container {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 10px 20px 0 20px;
   align-items: center;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  gap: 20px;
 }
 
 .logo-img {
-  width: 5rem;
+  width: 3rem;
+  height: 3rem;
+}
+
+.logo-container p {
+  font-size: 20px;
+  font-weight: bold;
 }
 
 .nav-items {
