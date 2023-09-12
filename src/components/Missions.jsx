@@ -38,7 +38,7 @@ const Missions = () => {
           <tbody>
             {missions.map((mission) => (
               <tr key={mission.mission_id} className={mission.reserved ? 'joined' : ''}>
-                <td>{mission.mission_name}</td>
+                <td className="name">{mission.mission_name}</td>
                 <td className="description">{mission.description}</td>
                 <td className="status">
                   <p className={mission.reserved ? 'member' : 'no-member'}>
