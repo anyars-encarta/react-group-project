@@ -1,12 +1,12 @@
 import React, { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import fetchMissions from '../redux/missions/missionsSlice';
 
 const Missions = () => {
+  const missions = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
 
   useEffect(() => {
-    // Dispatches the fetchMissions action on component mount
     dispatch(fetchMissions());
   }, [dispatch]);
 
@@ -22,48 +22,14 @@ const Missions = () => {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Missions</td>
-            <td>
-              The Missions section displays a list of current missions
-              along with their brief description and participation status.
-              There is also a button next to each mission that allows users
-              to join the selected mission or leave the mission the user
-              joined earlier.
-            </td>
-            <td>NOT A MEMBER</td>
-            <td>
-              <button type="button">Leave Mission</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Missions</td>
-            <td>
-              The Missions section displays a list of current missions
-              along with their brief description and participation status.
-              There is also a button next to each mission that allows users
-              to join the selected mission or leave the mission the user
-              joined earlier.
-            </td>
-            <td>NOT A MEMBER</td>
-            <td>
-              <button type="button">Leave Mission</button>
-            </td>
-          </tr>
-          <tr>
-            <td>Missions</td>
-            <td>
-              The Missions section displays a list of current missions
-              along with their brief description and participation status.
-              There is also a button next to each mission that allows users
-              to join the selected mission or leave the mission the user
-              joined earlier.
-            </td>
-            <td>NOT A MEMBER</td>
-            <td>
-              <button type="button">Leave Mission</button>
-            </td>
-          </tr>
+          {missions.map((mission) => (
+            <tr key={mission.mission_id}>
+              <td>{mission.mission_name}</td>
+              <td>{mission.description}</td>
+              <td>{mission.status}</td>
+              <td><button type="button">Leave Mission</button></td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </div>
