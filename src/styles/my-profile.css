@@ -51,10 +51,11 @@
   padding: 6px;
   border-radius: 5px;
   cursor: pointer;
+  border: none;
 }
 
 .read-more:hover {
-  border: 1px solid blue;
+  border: 1px solid #109ec2;
   background-color: #ffff;
   color: #109ec2;
 }
