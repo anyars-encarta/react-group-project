@@ -7,39 +7,43 @@ const MyProfile = () => {
 
   return (
     <div className="my-profile">
-      <table>
-        <thead>
-          <tr>
-            <th>My Missions</th>
-          </tr>
-        </thead>
-        <tbody>
-          {msj.map((mj) => (
-            <tr key={mj.mission_id}>
-              <td>{mj.mission_name}</td>
+      <div className="my-missions">
+        <table>
+          <thead>
+            <tr>
+              <th>My Missions</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            {msj.map((mj) => (
+              <tr key={mj.mission_id}>
+                <td>{mj.mission_name}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
 
-      <table>
-        <thead>
-          <tr>
-            <th>My Rockets</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Falcon 1</td>
-          </tr>
-          <tr>
-            <td>Falcon 2</td>
-          </tr>
-          <tr>
-            <td>Falcon 3</td>
-          </tr>
-        </tbody>
-      </table>
+      <div className="my-rockets">
+        <table>
+          <thead>
+            <tr>
+              <th>My Rockets</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Falcon 1</td>
+            </tr>
+            <tr>
+              <td>Falcon 2</td>
+            </tr>
+            <tr>
+              <td>Falcon 3</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 };

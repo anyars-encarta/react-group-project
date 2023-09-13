@@ -5,9 +5,12 @@
   gap: 20px;
 }
 
+.my-profile div {
+  width: 30%;
+}
+
 /* Style for the table */
 .my-profile table {
-  width: 30%;
   border-collapse: collapse;
   background-color: #fff;
   border-radius: 5px;
@@ -16,6 +19,7 @@
 
 /* Style for table headers */
 .my-profile th {
+  width: 30%;
   border: 1px solid;
   background-color: #333;
   color: #fff;
