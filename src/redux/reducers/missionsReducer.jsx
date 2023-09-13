@@ -22,9 +22,20 @@ const missionsReducer = (state = initialState, action) => {
       missionId = action.payload; // Assign the value inside the case block
       return {
         ...state,
-        missions: state.missions.map((mission) => { // To use rocket
+        missions: state.missions.map((mission) => { // To use rocket?
           if (mission.mission_id === missionId) {
             return { ...mission, reserved: true };
+          }
+          return mission;
+        }),
+      };
+    case 'LEAVE_MISSION':
+      missionId = action.payload;
+      return {
+        ...state,
+        missions: state.missions.map((mission) => {
+          if (mission.mission_id === missionId) {
+            return { ...mission, reserved: false };
           }
           return mission;
         }),
@@ -34,5 +45,4 @@ const missionsReducer = (state = initialState, action) => {
       return state;
   }
 };
-
 export default missionsReducer;

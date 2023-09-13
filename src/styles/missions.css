@@ -7,6 +7,10 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+.loading {
+  text-align: center;
+}
+
 /* Style for the table */
 table {
   width: 100%;
@@ -26,7 +30,16 @@ th {
 }
 
 /* Style for table rows */
-tr:nth-child(even) {
+
+/* tr:nth-child(even) {
+  background-color: #f2f2f2;
+} */
+.name,
+.description {
+  vertical-align: top;
+}
+
+.joined {
   background-color: #f2f2f2;
 }
 
@@ -52,16 +65,45 @@ td {
 }
 
 /* Style for the "Join Mission" button */
-button {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
+.join-m {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.leave-m {
+  background-color: #ffff;
+  border: 1px solid red;
+  color: red;
   padding: 5px 10px;
   cursor: pointer;
   border-radius: 3px;
 }
 
 /* Style for the "Join Mission" button on hover */
-button:hover {
-  background-color: #0056b3;
+.join-m:hover {
+  background-color: black;
+  color: #ffff;
+}
+
+.leave-m:hover {
+  background-color: red;
+  color: #ffff;
+}
+
+.member {
+  background-color: #109ec2;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.no-member {
+  background-color: grey;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
 }
