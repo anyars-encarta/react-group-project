@@ -10,13 +10,7 @@ const initialState = {
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (thunkAPI) => {
   try {
     const list = await axios(path);
-    const rockets = list.data.map((rocket) => ({
-      id: rocket.mission_id,
-      name: rocket.mission_name,
-      type: rocket.description,
-      flickr_images: rocket.flickr_images,
-    }));
-    return rockets;
+    return list.data;
   } catch (err) {
     return thunkAPI.rejectWithValue('something went wrong');
   }
