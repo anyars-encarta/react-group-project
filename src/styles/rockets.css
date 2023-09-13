@@ -1,10 +1,17 @@
 .rockets {
   padding: 10rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .rocket {
   display: flex;
   gap: 3rem;
+}
+
+.rocket-img {
+  width: 15rem;
 }
 
 .rocket-info {
