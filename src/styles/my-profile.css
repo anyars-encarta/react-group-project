@@ -32,3 +32,28 @@
   border: 1px solid;
   padding: 10px;
 }
+
+.joined-mission {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.read-more {
+  text-decoration: none;
+  background-color: #109ec2;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  border: 1px solid blue;
+  background-color: #ffff;
+  color: #109ec2;
+}
