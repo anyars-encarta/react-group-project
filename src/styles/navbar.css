@@ -1,9 +1,4 @@
 header {
-<<<<<<< HEAD
-  height: 5rem;
-  display: flex;
-  justify-content: space-around;
-=======
   position: fixed;
   width: 100%;
   top: 0;
@@ -17,19 +12,12 @@ header {
   display: flex;
   justify-content: space-between;
   padding: 10px 20px 0 20px;
->>>>>>> 5f7f5c0898f4383d8619e26f2a30dd27e03158d0
   align-items: center;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
-<<<<<<< HEAD
-}
-
-.logo-img {
-  width: 5rem;
-=======
   gap: 20px;
 }
 
@@ -41,7 +29,6 @@ header {
 .logo-container p {
   font-size: 20px;
   font-weight: bold;
->>>>>>> 5f7f5c0898f4383d8619e26f2a30dd27e03158d0
 }
 
 .nav-items {
@@ -50,22 +37,12 @@ header {
   gap: 2rem;
 }
 
-<<<<<<< HEAD
-.nav-item {
-=======
 .link {
->>>>>>> 5f7f5c0898f4383d8619e26f2a30dd27e03158d0
   text-decoration: none;
 }
 
 .active {
-<<<<<<< HEAD
-  color: blue;
-  text-decoration: underline;
-}
-=======
   color: #9ad0cf;
   border-bottom: 2px solid #02bab7;
 }
 
->>>>>>> 5f7f5c0898f4383d8619e26f2a30dd27e03158d0
