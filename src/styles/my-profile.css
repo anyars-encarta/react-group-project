@@ -1,7 +1,30 @@
 .my-profile {
   margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-h2 {
-  text-align: center;
+/* Style for the table */
+.my-profile table {
+  width: 30%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style for table headers */
+.my-profile th {
+  border: 1px solid;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style for table data cells */
+.my-profile td {
+  border: 1px solid;
+  padding: 10px;
 }

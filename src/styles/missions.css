@@ -12,7 +12,7 @@
 }
 
 /* Style for the table */
-table {
+.missions-table {
   width: 100%;
   border-collapse: collapse;
   background-color: #fff;
@@ -21,7 +21,7 @@ table {
 }
 
 /* Style for table headers */
-th {
+.missions-table th {
   border: 1px solid;
   background-color: #333;
   color: #fff;
@@ -44,7 +44,7 @@ th {
 }
 
 /* Style for table data cells */
-td {
+.missions-table td {
   border: 1px solid;
   padding: 10px;
 }
