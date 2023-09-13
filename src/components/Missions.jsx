@@ -1,9 +1,11 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import fetchMissions from '../redux/missions/missionsSlice';
+import fetchMissions, { joinMission } from '../redux/missions/missionsSlice';
 import '../styles/missions.css';
 
 const Missions = () => {
+  // Are we to use rockets data from the store here?
+  // const rockets = useSelector(state => state.rockets);
   const missions = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
 
@@ -39,7 +41,11 @@ const Missions = () => {
                 <td>{mission.mission_name}</td>
                 <td className="description">{mission.description}</td>
                 <td className="status">NOT A MEMBER</td>
-                <td className="join"><button type="button">Join Mission</button></td>
+                <td className="join">
+                  <button type="button" onClick={() => dispatch(joinMission(mission.mission_id))}>
+                    Join Mission
+                  </button>
+                </td>
               </tr>
             ))}
           </tbody>
