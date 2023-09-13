@@ -1,7 +1,17 @@
 .rockets {
-  margin-top: 90px;
+  padding: 10rem;
 }
 
-h2 {
-  text-align: center;
+.rocket {
+  display: flex;
+  gap: 3rem;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-reserve {
+  width: 8rem;
 }

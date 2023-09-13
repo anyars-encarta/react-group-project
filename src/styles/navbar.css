@@ -41,7 +41,7 @@ header {
   text-decoration: none;
 }
 
-.navbar .active {
+.active {
   color: #9ad0cf;
   border-bottom: 2px solid #02bab7;
 }

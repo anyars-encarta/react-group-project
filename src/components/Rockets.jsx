@@ -1,8 +1,9 @@
+import Rocket from './Rocket';
 import '../styles/rockets.css';
 
 const Rockets = () => (
   <div className="rockets">
-    <h2>Rockets Info Goes Here</h2>
+    <Rocket />
   </div>
 );
 
