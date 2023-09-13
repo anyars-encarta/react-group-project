@@ -19,3 +19,12 @@ header {
     display: flex;
     gap: 2rem;
 }
+
+.nav-item {
+    text-decoration: none;
+}
+
+.active {
+    color: blue;
+    text-decoration: underline;
+}
