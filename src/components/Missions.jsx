@@ -4,7 +4,7 @@ import fetchMissions, { joinMission, leaveMission } from '../redux/missions/miss
 import '../styles/missions.css';
 
 const Missions = () => {
-  // Are we to use rockets data from the store here?
+  // Not sure whether to use rockets or missions data from the store here?
   // const rockets = useSelector(state => state.rockets);
   const missions = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
