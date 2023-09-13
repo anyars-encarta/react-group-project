@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 
 const Rocket = ({ rocket }) => (
   <div className="rocket">
-    <img alt="img" className="rocket-img" src={rocket.flickr_images} />
+    <img alt="img" className="rocket-img" src={rocket.flickr_images[0]} />
     <div className="rocket-info">
       <h2 className="rocket-title">{rocket.name}</h2>
       <p className="rocket-description">
@@ -18,7 +18,7 @@ Rocket.propTypes = {
     id: PropTypes.string,
     name: PropTypes.string,
     description: PropTypes.string,
-    flickr_images: PropTypes.string,
+    flickr_images: PropTypes.arrayOf(PropTypes.string),
   }),
 };
 
@@ -27,7 +27,7 @@ Rocket.defaultProps = {
     id: '',
     name: '',
     description: '',
-    flickr_images: '',
+    flickr_images: {},
   },
 };
 
