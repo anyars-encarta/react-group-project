@@ -15,4 +15,14 @@ const fetchMissions = () => async (dispatch) => {
   }
 };
 
+export const joinMission = (missionId) => ({
+  type: 'JOIN_MISSION',
+  payload: missionId,
+});
+
+export const leaveMission = (missionId) => ({
+  type: 'LEAVE_MISSION',
+  payload: missionId,
+});
+
 export default fetchMissions;
