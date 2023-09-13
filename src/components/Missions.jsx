@@ -26,7 +26,7 @@ const Missions = () => {
       {loading ? (
         <p className="loading">Loading missions...</p>
       ) : (
-        <table>
+        <table className="missions-table">
           <thead>
             <tr>
               <th>Mission</th>

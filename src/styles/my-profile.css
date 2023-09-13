@@ -1,7 +1,60 @@
 .my-profile {
   margin-top: 90px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
 }
 
-h2 {
-  text-align: center;
+.my-profile .my-missions,
+.my-profile .my-rockets {
+  width: 40%;
+}
+
+/* Style for the table */
+.my-profile table {
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Style for table headers */
+.my-profile th {
+  width: 30%;
+  border: 1px solid;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+/* Style for table data cells */
+.my-profile td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.joined-mission {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.read-more {
+  text-decoration: none;
+  background-color: #109ec2;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  border: 1px solid blue;
+  background-color: #ffff;
+  color: #109ec2;
 }
