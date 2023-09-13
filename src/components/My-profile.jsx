@@ -51,7 +51,12 @@ const MyProfile = () => {
           </thead>
           <tbody>
             <tr>
-              <td>Falcon 1</td>
+              <td>
+                Video provides a powerful way to help you prove your point.
+                When you click Online Video, you can paste in the embed code
+                for the video you want to add. You can also type a keyword to
+                search online for the video that best fits your document.
+              </td>
             </tr>
             <tr>
               <td>Falcon 2</td>

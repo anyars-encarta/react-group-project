@@ -5,8 +5,9 @@
   gap: 20px;
 }
 
-.my-profile div {
-  width: 30%;
+.my-profile .my-missions,
+.my-profile .my-rockets {
+  width: 40%;
 }
 
 /* Style for the table */
