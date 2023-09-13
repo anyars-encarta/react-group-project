@@ -1,0 +1,17 @@
+.rockets {
+  padding: 10rem;
+}
+
+.rocket {
+  display: flex;
+  gap: 3rem;
+}
+
+.rocket-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.btn-reserve {
+  width: 8rem;
+}
