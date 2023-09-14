@@ -20,7 +20,7 @@
   - [🛠 Built With](#built-with)
     - [Tech Stack](#tech-stack)
     - [Key Features](#key-features)
-<!-- - [🚀 Live Demo](#live-demo) -->
+- [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
   - [Prerequisites](#prerequisites)
@@ -37,9 +37,9 @@
 - [📝 License](#license)
 
 <!-- INTRO -->
-# 📖 Encarta Book Store <a name="about-project"></a>
+# 📖 Space Travelers' Hub <a name="about-project"></a>
 
-> This is a Book Store app designed to manage variety of book collections.
+> This is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions.
 
 ## 🛠 Built With <a name="built-with"></a>
 1. React
@@ -64,7 +64,13 @@
 
 ### Key Features <a name="key-features"></a>
 
-> - Display and Manage Variety of Book Collections
+> - Display Rockets and their details
+> - Display Missions and thier details
+> - Reserve a Rocket
+> - Cancel Rocket Reservation
+> - Join a Mission
+> - Leave a Mission
+> - Display Booked Rockets and Reserved Missions in My Profile page
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -72,7 +78,8 @@
 
 LIVE DEMO
 
-> Visit [live](https://book-store-n5fn.onrender.com/) page of my Profile
+> Coming soon...
+<!-- > Visit [live](https://book-store-n5fn.onrender.com/) page of my Profile -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -84,9 +91,8 @@ LIVE DEMO
 > 
 ```sh
 cd book-store
-https://github.com/anyars-encarta/book-store.git
+https://github.com/anyars-encarta/react-group-project.git
 ```
-
 
 <!-- SETUP -->
 ### Setup
@@ -134,14 +140,19 @@ You can deploy this project using:
 
 - GitHub: [@anyars-encarta](https://github.com/anyars-encarta)
 - Twitter: [@anyarsencarta](https://twitter.com/anyarsencarta)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anyars-yussif-1a179769/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/anyars-yussif/)
 
+👤 **Bianca Lopez**
+
+- GitHub: [user-name](https://github.com/)
+- Twitter: [user-name](https://twitter.com/)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **Add Book Cataloguing features**
+- [ ] **Add Dragon Pages**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -176,7 +187,7 @@ Contributions, issues, and feature requests are welcome!
 
 - **What new features should be expected in the next release of the project?**
 
-  - I am currently working on adding **Book Cataloguing features**.
+  - We are currently working on adding **Dragon page**.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
