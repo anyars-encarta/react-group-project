@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import fetchMissions, { joinMission, leaveMission } from '../redux/missions/missionsSlice';
+import { fetchMissions, joinMission, leaveMission } from '../redux/missions/missionsSlice';
 import '../styles/missions.css';
 
 const Missions = () => {
