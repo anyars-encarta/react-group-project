@@ -29,11 +29,13 @@
 }
 
 .btn-cancel {
-  width: 10rem;
+  width: 11rem;
   background-color: white;
   color: rgb(102, 102, 102);
   border: 1px solid black;
-  font-size: 0.9rem;
+  font-size: 1rem;
+  padding: 8px;
+  border-radius: 6px;
 }
 
 .btn-cancel:hover {
@@ -41,6 +43,11 @@
 }
 
 .btn-reserve {
-  width: 8rem;
-  font-size: 0.9rem;
+  width: 9rem;
+  font-size: 1rem;
+  background-color: rgb(16, 145, 250);
+  color: white;
+  border: none;
+  padding: 8px;
+  border-radius: 5px;
 }
