@@ -19,6 +19,24 @@
   flex-direction: column;
 }
 
+.rocket-reserved {
+  background-color: rgb(4, 158, 158);
+  border-radius: 5px;
+  color: white;
+  padding: 2px;
+  font-weight: 500;
+  font-size: 0.8rem;
+}
+
+.btn-cancel {
+  width: 10rem;
+  background-color: white;
+  color: rgb(102, 102, 102);
+  border: 1px solid black;
+  font-size: 0.9rem;
+}
+
 .btn-reserve {
   width: 8rem;
+  font-size: 0.9rem;
 }
