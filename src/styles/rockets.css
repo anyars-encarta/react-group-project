@@ -19,6 +19,14 @@
   flex-direction: column;
 }
 
+.rocket-reserved {
+  background-color: rgb(4, 158, 158);
+  border-radius: 5px;
+  color: white;
+  padding: 2px;
+  font-weight: 500;
+}
+
 .btn-reserve {
   width: 8rem;
 }
