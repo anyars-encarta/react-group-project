@@ -74,15 +74,6 @@
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- LIVE DEMO -->
-
-LIVE DEMO
-
-> Coming soon...
-<!-- > Visit [live](https://book-store-n5fn.onrender.com/) page of my Profile -->
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
 <!-- GETTING STARTED -->
 
 ## 💻 Getting Started <a name="getting-started"></a>
