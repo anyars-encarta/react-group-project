@@ -67,7 +67,7 @@ const MyProfile = () => {
             </tr>
           </thead>
           <tbody>
-            {rockets.length === 0 ? <tr><td>No missions joined</td></tr> : null}
+            {rockets.length === 0 ? <tr><td>No rockets reserved</td></tr> : null}
             {rockets.map((rocket) => (
               <tr key={rocket.id}>
                 <td className="td-rocket">
