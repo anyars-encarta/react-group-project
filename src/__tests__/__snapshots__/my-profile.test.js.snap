@@ -38,7 +38,7 @@ exports[`Profile page it renders 1`] = `
       <tbody>
         <tr>
           <td>
-            No missions joined
+            No rockets reserved
           </td>
         </tr>
       </tbody>
