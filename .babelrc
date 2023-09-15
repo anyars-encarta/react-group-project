@@ -1,6 +1,6 @@
 {
     "presets": [
-        "@babel/preset-react", "@babel/plugin-proposal-private-property-in-object"
+        "@babel/preset-react"
     ],
-    "plugins": ["@babel/plugin-syntax-jsx", "@babel/plugin-proposal-private-property-in-object"]
+    "plugins": ["@babel/plugin-syntax-jsx"]
   }
