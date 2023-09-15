@@ -1,0 +1,98 @@
+.missions {
+  margin: 90px 20px 20px 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.loading {
+  text-align: center;
+}
+
+.missions-table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.missions-table th {
+  border: 1px solid;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.name,
+.description {
+  vertical-align: top;
+}
+
+.joined {
+  background-color: #f2f2f2;
+}
+
+.missions-table td {
+  border: 1px solid;
+  padding: 10px;
+}
+
+.description {
+  width: 70%;
+}
+
+.status {
+  width: 15%;
+  text-align: center;
+}
+
+.join {
+  width: 10%;
+  align-items: center;
+  align-content: center;
+}
+
+.join-m {
+  background-color: #f2f2f2;
+  border: 1px solid black;
+  color: black;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.leave-m {
+  background-color: #ffff;
+  border: 1px solid red;
+  color: red;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 3px;
+}
+
+.join-m:hover {
+  background-color: black;
+  color: #ffff;
+}
+
+.leave-m:hover {
+  background-color: red;
+  color: #ffff;
+}
+
+.member {
+  background-color: #109ec2;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
+}
+
+.no-member {
+  background-color: grey;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
+}
