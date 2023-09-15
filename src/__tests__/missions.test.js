@@ -29,11 +29,10 @@ const data = [
   },
 ];
 
-describe('Rockets component', () => {
-  it('renders a list of rockets', async () => {
+describe('Missions component', () => {
+  it('renders a list of missions', async () => {
     global.fetch = jest.fn(() => Promise.resolve({ json: () => Promise.resolve(data) }));
-
-    render(
+    const { asFragment } = render(
       <Provider store={missionStore}>
         <Missions />
       </Provider>,
@@ -42,5 +41,7 @@ describe('Rockets component', () => {
     await waitFor(() => expect(screen.getByText('Mission Apolo')).toBeInTheDocument());
     await waitFor(() => expect(screen.getByText('Mission Apolo 2')).toBeInTheDocument());
     await waitFor(() => expect(screen.getByText('Mission Apolo 3')).toBeInTheDocument());
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });

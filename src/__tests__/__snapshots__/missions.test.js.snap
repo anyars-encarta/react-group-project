@@ -1,0 +1,131 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Missions component renders a list of missions 1`] = `
+<DocumentFragment>
+  <div
+    class="missions"
+  >
+    <table
+      class="missions-table"
+    >
+      <thead>
+        <tr>
+          <th>
+            Mission
+          </th>
+          <th>
+            Description
+          </th>
+          <th>
+            Status
+          </th>
+          <th>
+             
+          </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr
+          class="joined"
+        >
+          <td
+            class="name"
+          >
+            Mission Apolo
+          </td>
+          <td
+            class="description"
+          >
+            Mission Mission, Mission Mission Space
+          </td>
+          <td
+            class="status"
+          >
+            <p
+              class="no-member"
+            >
+              NOT A MEMBER
+            </p>
+          </td>
+          <td
+            class="join"
+          >
+            <button
+              class="join-m"
+              type="button"
+            >
+              Join Mission
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="joined"
+        >
+          <td
+            class="name"
+          >
+            Mission Apolo 2
+          </td>
+          <td
+            class="description"
+          >
+            Mission Mission, Mission Mission Space 2
+          </td>
+          <td
+            class="status"
+          >
+            <p
+              class="no-member"
+            >
+              NOT A MEMBER
+            </p>
+          </td>
+          <td
+            class="join"
+          >
+            <button
+              class="join-m"
+              type="button"
+            >
+              Join Mission
+            </button>
+          </td>
+        </tr>
+        <tr
+          class="joined"
+        >
+          <td
+            class="name"
+          >
+            Mission Apolo 3
+          </td>
+          <td
+            class="description"
+          >
+            Mission Mission, Mission Mission Space 3
+          </td>
+          <td
+            class="status"
+          >
+            <p
+              class="no-member"
+            >
+              NOT A MEMBER
+            </p>
+          </td>
+          <td
+            class="join"
+          >
+            <button
+              class="join-m"
+              type="button"
+            >
+              Join Mission
+            </button>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</DocumentFragment>
+`;

@@ -3,15 +3,28 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
+  margin: 0 20px 20px 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 .rocket {
   display: flex;
   gap: 3rem;
+  margin-bottom: 1rem;
 }
 
 .rocket-img {
   width: 15rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  border-radius: 20px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.rocket-img:hover {
+  transform: scale(1.1);
 }
 
 .rocket-info {
@@ -40,6 +53,7 @@
 
 .btn-cancel:hover {
   background-color: rgb(208, 208, 208);
+  cursor: pointer;
 }
 
 .btn-reserve {
@@ -50,4 +64,11 @@
   border: none;
   padding: 8px;
   border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-reserve:hover {
+  background-color: white;
+  color: rgb(16, 145, 250);
+  border: 1px solid rgb(16, 145, 250);
 }

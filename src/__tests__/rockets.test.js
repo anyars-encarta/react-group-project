@@ -38,8 +38,7 @@ const data = [
 describe('Rockets component', () => {
   it('renders a list of rockets', async () => {
     global.fetch = jest.fn(() => Promise.resolve({ json: () => Promise.resolve(data) }));
-
-    render(
+    const { asFragment } = render(
       <Provider store={rocketsStore}>
         <Rockets />
       </Provider>,
@@ -48,5 +47,7 @@ describe('Rockets component', () => {
     await waitFor(() => expect(screen.getByText('id2')).toBeInTheDocument());
     await waitFor(() => expect(screen.getByText('id1')).toBeInTheDocument());
     await waitFor(() => expect(screen.getByText('id3')).toBeInTheDocument());
+
+    expect(asFragment()).toMatchSnapshot();
   });
 });
