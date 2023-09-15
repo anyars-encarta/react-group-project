@@ -1,11 +1,9 @@
 import React from 'react';
 import { render, screen, act } from '@testing-library/react';
 import { BrowserRouter } from 'react-router-dom';
-import userEvent from '@testing-library/user-event'; // Import userEvent
+import userEvent from '@testing-library/user-event';
 import renderer from 'react-test-renderer';
 import Navbar from '../components/Navbar';
-
-// Import Jest's snapshot testing utilities
 
 describe('Navbar', () => {
   it('renders without errors', () => {
@@ -18,7 +16,6 @@ describe('Navbar', () => {
     expect(screen.getByText("Space Travelers' Hub")).toBeInTheDocument();
   });
 
-  // Create a snapshot of the rendered component
   const tree = renderer.create(
     <BrowserRouter>
       <Navbar />
@@ -38,7 +35,6 @@ it('navigates to Rockets page when Rockets link is clicked', () => {
   const rocketsNavLink = screen.getByText('Rockets');
   expect(rocketsNavLink).toBeInTheDocument();
 
-  // Wrap the click event in act
   act(() => {
     userEvent.click(rocketsNavLink);
   });
@@ -56,7 +52,6 @@ it('navigates to Missions page when Missions link is clicked', () => {
   const missionsNavLink = screen.getByText('Missions');
   expect(missionsNavLink).toBeInTheDocument();
 
-  // Wrap the click event in act
   act(() => {
     userEvent.click(missionsNavLink);
   });

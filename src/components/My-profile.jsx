@@ -5,11 +5,9 @@ import '../styles/my-profile.css';
 import { leaveMission } from '../redux/missions/missionsSlice';
 import { cancelationRocket } from '../redux/rockets/rocketsSlice';
 
-// Define your selectors
 const selectMissions = (state) => state.missions.missions;
 const selectRockets = (state) => state.rockets.rockets;
 
-// Create memoized selectors using reselect
 const selectReservedMissions = createSelector(
   [selectMissions],
   (missions) => missions.filter((mission) => mission.reserved),
