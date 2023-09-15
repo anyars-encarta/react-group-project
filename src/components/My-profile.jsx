@@ -5,7 +5,7 @@ import { leaveMission } from '../redux/missions/missionsSlice';
 import { cancelationRocket } from '../redux/rockets/rocketsSlice';
 
 const MyProfile = () => {
-  const msj = useSelector((state) => state.missions.missions.filter((mission) => mission.reserved));
+ const msj = useSelector((state) => state.missions.missions.filter((mission) => mission.reserved));
   const rockets = useSelector((state) => state.rockets.rockets.filter((rocket) => rocket.reserved));
   const dispatch = useDispatch();
 
