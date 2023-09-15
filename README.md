@@ -100,6 +100,7 @@ https://github.com/anyars-encarta/react-group-project.git
 To setup this project, run this command:
 
 ```sh
+npm install
 npm start
 ```
 ### Prerequisites
@@ -144,9 +145,9 @@ You can deploy this project using:
 
 👤 **Bianca Lopez**
 
-- GitHub: [user-name](https://github.com/)
-- Twitter: [user-name](https://twitter.com/)
-- LinkedIn: [LinkedIn](https://www.linkedin.com/in/)
+- GitHub: [@BiancaMe](https://github.com/BiancaMe)
+- Twitter: [@BiancaMeLopez](https://twitter.com/BiancaMeLopez)
+- LinkedIn: [LinkedIn](https://www.linkedin.com/in/bianca-lopez-55a4a3276/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
