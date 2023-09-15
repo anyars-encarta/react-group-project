@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 const initialState = {
   missions: [],
   error: null,
@@ -7,8 +5,8 @@ const initialState = {
 
 export const fetchMissions = () => async (dispatch) => {
   try {
-    const response = await axios.get('https://api.spacexdata.com/v3/missions');
-    const missions = response.data.map((mission) => ({
+    const response = await fetch('https://api.spacexdata.com/v3/missions').then((res) => res.json()).then((data) => data);
+    const missions = response.map((mission) => ({
       mission_id: mission.mission_id,
       mission_name: mission.mission_name,
       description: mission.description,

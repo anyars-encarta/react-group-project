@@ -13,21 +13,21 @@ const rocketsStore = configureStore({
 
 const data = [
   {
-    id: 'Apolo 1',
+    id: 'Apolo1',
     name: 'id1',
     description: 'Apolo Apolo, Apolo 1',
     flickr_images: ['apolo1.png'],
     reserved: false,
   },
   {
-    id: 'Apolo 2',
+    id: 'Apolo2',
     name: 'id2',
     description: 'Apolo Apolo, Apolo 2',
     flickr_images: ['apolo2.png'],
     reserved: false,
   },
   {
-    id: 'Apolo 3',
+    id: 'Apolo3',
     name: 'id3',
     description: 'Apolo Apolo, Apolo 3',
     flickr_images: ['apolo3.png'],

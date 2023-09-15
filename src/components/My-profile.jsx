@@ -8,7 +8,6 @@ const MyProfile = () => {
   const msj = useSelector((state) => state.missions.missions.filter((mission) => mission.reserved));
   const rockets = useSelector((state) => state.rockets.rockets.filter((rocket) => rocket.reserved));
   const dispatch = useDispatch();
-
   const redirectToWikipedia = (url) => {
     window.open(url, '_blank');
   };

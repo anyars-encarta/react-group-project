@@ -3,7 +3,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 const path = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
-  rockets: {},
+  rockets: [],
 };
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (thunkAPI) => {
