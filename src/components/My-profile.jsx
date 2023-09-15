@@ -1,14 +1,27 @@
 import React from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { createSelector } from 'reselect';
 import '../styles/my-profile.css';
 import { leaveMission } from '../redux/missions/missionsSlice';
 import { cancelationRocket } from '../redux/rockets/rocketsSlice';
 
-const MyProfile = () => {
-  const msj = useSelector((state) => state.missions.missions.filter((mission) => mission.reserved));
-  const rockets = useSelector((state) => state.rockets.rockets.filter((rocket) => rocket.reserved));
-  const dispatch = useDispatch();
+const selectMissions = (state) => state.missions.missions;
+const selectRockets = (state) => state.rockets.rockets;
 
+const selectReservedMissions = createSelector(
+  [selectMissions],
+  (missions) => missions.filter((mission) => mission.reserved),
+);
+
+const selectReservedRockets = createSelector(
+  [selectRockets],
+  (rockets) => rockets.filter((rocket) => rocket.reserved),
+);
+
+const MyProfile = () => {
+  const msj = useSelector(selectReservedMissions);
+  const rockets = useSelector(selectReservedRockets);
+  const dispatch = useDispatch();
   const redirectToWikipedia = (url) => {
     window.open(url, '_blank');
   };
@@ -23,7 +36,7 @@ const MyProfile = () => {
             </tr>
           </thead>
           <tbody>
-            {msj.length === 0 && <tr><td>No missions joined</td></tr>}
+            {msj && msj.length === 0 ? <tr><td>No missions joined</td></tr> : null}
             {msj.map((mj) => (
               <tr key={mj.mission_id}>
                 <td className="joined-mission">
@@ -52,7 +65,7 @@ const MyProfile = () => {
             </tr>
           </thead>
           <tbody>
-            {rockets.length === 0 && <tr><td>No missions joined</td></tr>}
+            {rockets.length === 0 ? <tr><td>No rockets reserved</td></tr> : null}
             {rockets.map((rocket) => (
               <tr key={rocket.id}>
                 <td className="td-rocket">

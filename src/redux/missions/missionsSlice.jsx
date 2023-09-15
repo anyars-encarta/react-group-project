@@ -1,5 +1,3 @@
-import axios from 'axios';
-
 const initialState = {
   missions: [],
   error: null,
@@ -7,8 +5,8 @@ const initialState = {
 
 export const fetchMissions = () => async (dispatch) => {
   try {
-    const response = await axios.get('https://api.spacexdata.com/v3/missions');
-    const missions = response.data.map((mission) => ({
+    const response = await fetch('https://api.spacexdata.com/v3/missions').then((res) => res.json()).then((data) => data);
+    const missions = response.map((mission) => ({
       mission_id: mission.mission_id,
       mission_name: mission.mission_name,
       description: mission.description,
@@ -46,10 +44,10 @@ const missionsReducer = (state = initialState, action) => {
         error: action.payload,
       };
     case 'JOIN_MISSION':
-      missionId = action.payload; // Assign the value inside the case block
+      missionId = action.payload;
       return {
         ...state,
-        missions: state.missions.map((mission) => { // To use rocket?
+        missions: state.missions.map((mission) => {
           if (mission.mission_id === missionId) {
             return { ...mission, reserved: true };
           }

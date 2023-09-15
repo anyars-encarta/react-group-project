@@ -1,0 +1,97 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Rockets component renders a list of rockets 1`] = `
+<DocumentFragment>
+  <div
+    class="rockets"
+  >
+    <div
+      class="rocket"
+    >
+      <img
+        alt="img"
+        class="rocket-img"
+        src="apolo1.png"
+      />
+      <div
+        class="rocket-info"
+      >
+        <h2
+          class="rocket-title"
+        >
+          id1
+        </h2>
+        <p
+          class="rocket-description"
+        >
+          Apolo Apolo, Apolo 1
+        </p>
+        <button
+          class="btn-reserve"
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+    <div
+      class="rocket"
+    >
+      <img
+        alt="img"
+        class="rocket-img"
+        src="apolo2.png"
+      />
+      <div
+        class="rocket-info"
+      >
+        <h2
+          class="rocket-title"
+        >
+          id2
+        </h2>
+        <p
+          class="rocket-description"
+        >
+          Apolo Apolo, Apolo 2
+        </p>
+        <button
+          class="btn-reserve"
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+    <div
+      class="rocket"
+    >
+      <img
+        alt="img"
+        class="rocket-img"
+        src="apolo3.png"
+      />
+      <div
+        class="rocket-info"
+      >
+        <h2
+          class="rocket-title"
+        >
+          id3
+        </h2>
+        <p
+          class="rocket-description"
+        >
+          Apolo Apolo, Apolo 3
+        </p>
+        <button
+          class="btn-reserve"
+          type="button"
+        >
+          Reserve Rocket
+        </button>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

@@ -3,13 +3,11 @@ import thunk from 'redux-thunk';
 import missionsReducer from './missions/missionsSlice';
 import rocketsReducer from './rockets/rocketsSlice';
 
-// Combine reducers
 const rootReducer = combineReducers({
   missions: missionsReducer,
   rockets: rocketsReducer,
 });
 
-// Apply middleware
 const store = createStore(rootReducer, applyMiddleware(thunk));
 
 export default store;

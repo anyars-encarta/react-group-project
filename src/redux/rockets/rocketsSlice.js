@@ -1,16 +1,14 @@
-import axios from 'axios';
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 
 const path = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
-  rockets: {},
+  rockets: [],
 };
 
 export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (thunkAPI) => {
   try {
-    const list = await axios(path);
-    return list.data;
+    return await fetch(path).then((res) => res.json()).then((data) => data);
   } catch (err) {
     return thunkAPI.rejectWithValue('something went wrong');
   }

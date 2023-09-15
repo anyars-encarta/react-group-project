@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router-dom';
 import '../styles/navbar.css';
-import logo from '../assets/planet-grey.png';
+import logo from '../assets/planet-color-2.png';
 
 const Navbar = () => (
   <header>
