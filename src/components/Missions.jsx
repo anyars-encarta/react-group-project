@@ -1,16 +1,15 @@
 import React, { useEffect, useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { fetchMissions, joinMission, leaveMission } from '../redux/missions/missionsSlice';
+import { fetchMissionsIfNeeded, joinMission, leaveMission } from '../redux/missions/missionsSlice';
 import '../styles/missions.css';
 
 const Missions = () => {
   const missions = useSelector((state) => state.missions.missions);
   const dispatch = useDispatch();
-
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    dispatch(fetchMissions())
+    dispatch(fetchMissionsIfNeeded())
       .then(() => {
         setLoading(false);
       })

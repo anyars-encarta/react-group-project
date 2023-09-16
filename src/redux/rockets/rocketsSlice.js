@@ -4,15 +4,26 @@ const path = 'https://api.spacexdata.com/v4/rockets';
 
 const initialState = {
   rockets: [],
+  isLoading: false,
+  isFetched: false,
 };
 
-export const fetchRockets = createAsyncThunk('rockets/fetchRockets', async (thunkAPI) => {
-  try {
-    return await fetch(path).then((res) => res.json()).then((data) => data);
-  } catch (err) {
-    return thunkAPI.rejectWithValue('something went wrong');
-  }
-});
+export const fetchRocketsIfNeeded = createAsyncThunk(
+  'rockets/fetchRocketsIfNeeded',
+  async (_, thunkAPI) => {
+    const { rockets } = thunkAPI.getState().rockets;
+    if (rockets.length > 0) {
+      return rockets;
+    }
+
+    try {
+      const response = await fetch(path).then((res) => res.json());
+      return response;
+    } catch (err) {
+      return thunkAPI.rejectWithValue('Something went wrong');
+    }
+  },
+);
 
 const rocketsSlice = createSlice({
   name: 'rockets',
@@ -35,14 +46,14 @@ const rocketsSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder
-      .addCase(fetchRockets.pending, (state) => {
+      .addCase(fetchRocketsIfNeeded.pending, (state) => {
         state.isLoading = true;
       })
-      .addCase(fetchRockets.fulfilled, (state, action) => {
+      .addCase(fetchRocketsIfNeeded.fulfilled, (state, action) => {
         state.isLoading = false;
         state.rockets = action.payload;
       })
-      .addCase(fetchRockets.rejected, (state) => {
+      .addCase(fetchRocketsIfNeeded.rejected, (state) => {
         state.isLoading = false;
       });
   },

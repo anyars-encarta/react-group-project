@@ -1,11 +1,17 @@
 const initialState = {
   missions: [],
   error: null,
+  isFetched: false,
 };
 
-export const fetchMissions = () => async (dispatch) => {
+export const fetchMissionsIfNeeded = () => async (dispatch, getState) => {
+  const { missions } = getState().missions;
+  if (missions.length > 0) {
+    return;
+  }
+
   try {
-    const response = await fetch('https://api.spacexdata.com/v3/missions').then((res) => res.json()).then((data) => data);
+    const response = await fetch('https://api.spacexdata.com/v3/missions').then((res) => res.json());
     const missions = response.map((mission) => ({
       mission_id: mission.mission_id,
       mission_name: mission.mission_name,
