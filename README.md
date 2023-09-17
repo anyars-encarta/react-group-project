@@ -78,8 +78,7 @@
 
 LIVE DEMO
 
-> Coming soon...
-<!-- > Visit [live](https://book-store-n5fn.onrender.com/) page of my Profile -->
+> Visit [live](https://) page of my Profile
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -90,7 +89,7 @@ LIVE DEMO
 > To get a local copy of the project, use this link:
 > 
 ```sh
-cd book-store
+cd react-group-project
 https://github.com/anyars-encarta/react-group-project.git
 ```
 
