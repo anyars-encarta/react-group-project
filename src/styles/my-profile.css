@@ -1,0 +1,70 @@
+.my-profile {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin: 90px 20px 20px 20px;
+  padding: 20px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.my-profile .my-missions,
+.my-profile .my-rockets {
+  width: 40%;
+}
+
+.my-profile table {
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.my-profile th {
+  width: 20%;
+  border: 1px solid;
+  background-color: #333;
+  color: #fff;
+  text-align: left;
+  padding: 10px;
+}
+
+.my-profile td {
+  border: 1px solid;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+.joined-mission {
+  display: flex;
+  justify-content: space-between;
+}
+
+.mission-buttons {
+  display: flex;
+  gap: 5px;
+}
+
+.read-more {
+  text-decoration: none;
+  background-color: #109ec2;
+  border: 1px solid #109ec2;
+  color: #ffff;
+  padding: 6px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  background-color: #ffff;
+  color: #109ec2;
+  border: 1px solid #109ec2;
+}
+
+.td-rocket {
+  display: flex;
+  justify-content: space-between;
+}
