@@ -78,8 +78,7 @@
 
 LIVE DEMO
 
-> Coming soon...
-<!-- > Visit [live](https://book-store-n5fn.onrender.com/) page of my Profile -->
+> Visit the [live](https://anyars-encarta.github.io/space-travelers-hub/) page of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
