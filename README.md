@@ -78,7 +78,7 @@
 
 LIVE DEMO
 
-> Visit [live](https://) page of my Profile
+> Visit the [live](https://anyars-encarta.github.io/space-travelers-hub/) page of the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
