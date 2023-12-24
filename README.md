@@ -89,7 +89,7 @@ LIVE DEMO
 > To get a local copy of the project, use this link:
 > 
 ```sh
-cd book-store
+cd react-group-project
 https://github.com/anyars-encarta/react-group-project.git
 ```
 
