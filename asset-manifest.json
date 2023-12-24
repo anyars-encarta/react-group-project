@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/space-travelers-hub/static/css/main.c6417f31.css",
-    "main.js": "/space-travelers-hub/static/js/main.13ab8e8e.js",
-    "static/js/787.37d437e6.chunk.js": "/space-travelers-hub/static/js/787.37d437e6.chunk.js",
-    "static/media/planet-color-2.png": "/space-travelers-hub/static/media/planet-color-2.c1cd168acba305496d99.png",
-    "index.html": "/space-travelers-hub/index.html",
-    "main.c6417f31.css.map": "/space-travelers-hub/static/css/main.c6417f31.css.map",
-    "main.13ab8e8e.js.map": "/space-travelers-hub/static/js/main.13ab8e8e.js.map",
-    "787.37d437e6.chunk.js.map": "/space-travelers-hub/static/js/787.37d437e6.chunk.js.map"
+    "main.css": "/react-group-project/static/css/main.c6417f31.css",
+    "main.js": "/react-group-project/static/js/main.a57fc0a0.js",
+    "static/js/787.37d437e6.chunk.js": "/react-group-project/static/js/787.37d437e6.chunk.js",
+    "static/media/planet-color-2.png": "/react-group-project/static/media/planet-color-2.c1cd168acba305496d99.png",
+    "index.html": "/react-group-project/index.html",
+    "main.c6417f31.css.map": "/react-group-project/static/css/main.c6417f31.css.map",
+    "main.a57fc0a0.js.map": "/react-group-project/static/js/main.a57fc0a0.js.map",
+    "787.37d437e6.chunk.js.map": "/react-group-project/static/js/787.37d437e6.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c6417f31.css",
-    "static/js/main.13ab8e8e.js"
+    "static/js/main.a57fc0a0.js"
   ]
 }
