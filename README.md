@@ -39,7 +39,7 @@
 <!-- INTRO -->
 # 📖 Space Travelers' Hub <a name="about-project"></a>
 
-> This is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions.
+> This is a web application for a company that provides commercial and scientific space travel services. It allows users to book rockets and join selected space missions. The app makes use of an API.
 
 ## 🛠 Built With <a name="built-with"></a>
 1. React
